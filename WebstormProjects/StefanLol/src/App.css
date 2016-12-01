@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+.notification {
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 1000000;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  height: 7%;
+  border-radius:6px;
+  padding:5px;
+}
+
+.notification div {
+  padding-top:15px;
+}
+#error {
+  background: linear-gradient(to right, rgba(255, 3, 0, 0.55), rgba(255, 26, 23,0.5));
+}
+#success {
+  background: linear-gradient(to right, rgba(0, 155, 0, 0.96), rgba(26, 175, 1, 0.87))
+}
+.container  {
+  padding:30px;
+  text-align:center;
+}
+.container .feed{
+  margin-left:400px;
+  margin-right:360px;
+}
+.container .content-right{
+  position:absolute;
+  left:73%;
+  top:15%;
+  padding-bottom:15px;
+}
+

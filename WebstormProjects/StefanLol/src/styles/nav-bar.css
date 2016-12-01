@@ -1,0 +1,146 @@
+header {
+    font-size: 0.9em;
+    background-color: #333;
+    padding: 15px;
+}
+
+header a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+
+header .browse-posts {
+
+}
+
+header .browse-posts a {
+    color: #9D9D9D;
+}
+
+header .user-related {
+    float: right;
+}
+
+#loginLink {
+    text-transform: uppercase;
+    padding: 5px 11px 5px 11px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #484848;
+}
+
+header #loginLink:hover {
+    background-color: #555;
+}
+
+#registerLink {
+    padding: 7px 10px 6px 10px;
+    border: 1px solid;
+    border-radius: 7px;
+    background-color: #3098DC;
+}
+
+#registerLink:hover {
+    background-color: #3ba4e8;
+}
+
+header .user-related-logged {
+    padding-right: 100px;
+    float: right;
+}
+
+header .user-related-logged input {
+    text-transform: uppercase;
+    padding: 3px 11px 3px 11px;
+    margin: 0px 0px 10px 20px;
+    border: 1px solid;
+    border-radius: 7px;
+    background-color: #3098DC;
+}
+
+header input:hover {
+    background-color: #3ba4e8;
+}
+
+#profileDown {
+    display:none;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    z-index: 101;
+    position: fixed;
+    top: 45px;
+    left: 1060px;
+    width: 175px;
+    color: #BBBBBB;
+    /*padding:5px;*/
+    background-color: #272B2B;
+}
+
+#profileDown a {
+    padding: 5px;
+    color: #BBBBBB;
+    display: block;
+}
+
+#profileDown a:hover {
+    background-color: #3C4242;
+}
+
+header #search {
+    margin-right: 15px;
+    margin-top: 6px;
+    float: left;
+    background: url('http://hugelol.com/css/sprite_v1.png') no-repeat -111px -107px;
+    width: 18px;
+    height: 18px;
+}
+header #search:hover {
+    background: url('http://hugelol.com/css/sprite_v1.png') no-repeat -111px -82px;
+    opacity: 0.7;
+}
+header #messages {
+    margin-right: 15px;
+    margin-top: 6px;
+    float: left;
+    background: url('http://hugelol.com/css/sprite_v1.png') no-repeat -31px -105px;
+    width: 21px;
+    height: 18px;
+}
+header #messages:hover {
+    background: url('http://hugelol.com/css/sprite_v1.png') no-repeat -31px -81px;
+    opacity: 0.7;
+}
+header #notification {
+    margin-right: 15px;
+    margin-top: 6px;
+    float: left;
+    background: url('http://hugelol.com/css/sprite_v1.png') no-repeat -4px -105px;
+    width: 17px;
+    height: 18px;
+}
+header #notification:hover {
+    background: url('http://hugelol.com/css/sprite_v1.png') no-repeat -4px -81px;
+    opacity: 0.7;
+}
+header .avatar-icon {
+    margin-right: 5px;
+    height: 28px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-top: 1px;
+    vertical-align: middle;
+}
+header #headerProfile {
+    margin-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+header #headerProfile:hover{
+    background-color: #474F4F;
+}
