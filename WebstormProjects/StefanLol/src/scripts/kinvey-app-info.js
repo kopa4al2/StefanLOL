@@ -67,12 +67,12 @@ const KinveyRequester = (function() {
         });
     }
 
-    function createBook(title, author, description) {
+    function createPost(title, author, picId, picType, picFormat) {
         return $.ajax({
             method: "POST",
-            url: baseUrl + "appdata/" + appKey + "/books",
+            url: baseUrl + "appdata/" + appKey + "/posts",
             headers: getKinveyUserAuthHeaders(),
-            data: { title, author, description }
+            data: { title, author, picId, picType, picFormat }
         });
     }
 
@@ -95,7 +95,7 @@ const KinveyRequester = (function() {
 
     return {
         loginUser, registerUser, logoutUser,
-        findAllPosts, createBook, findPostById, editBook, deleteBook
+        findAllPosts, createPost, findPostById, editBook, deleteBook
     }
 })();
 

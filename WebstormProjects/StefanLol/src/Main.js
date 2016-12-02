@@ -4,6 +4,9 @@ import KinveyRequester from './scripts/kinvey-app-info';
 import Post from './Components/Post';
 import TodaysBest from './Components/todaysBest';
 import TodaysLatest from './Components/todays-latest';
+import UserMenu from './Components/user-related';
+
+
 // class Main extends Component {
 //     constructor(props) {
 //         super(props);
@@ -34,6 +37,8 @@ import TodaysLatest from './Components/todays-latest';
 //          <Image cloudName="dt33hi6os" publicId="recici.jpg" width="300" crop="scale"/>
 //     }
 // }
+
+
 var that;
 
 var Main = React.createClass({
@@ -48,7 +53,10 @@ var Main = React.createClass({
         KinveyRequester.findAllPosts().then(function (response) {
             for (let obj of response) {
                 img.push(<Post id={obj._id}
-                               picId={obj.postName}
+                               picId={obj.picId}
+                               picFormat={obj.picFormat}
+                               picType={obj.picType}
+                               author={obj.author}
                                title={obj.title}
                                upvotes={obj.upvotes}
                                downvotes={obj.downvotes}/>)
@@ -65,7 +73,7 @@ var Main = React.createClass({
     render: function () {
         return <div id="mainContainer">
             <div className="content-left">
-
+                <UserMenu/>
             </div>
             <div className="feed">
                 {this.state.images}

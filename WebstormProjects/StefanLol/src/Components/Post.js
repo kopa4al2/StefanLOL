@@ -8,7 +8,7 @@ let Post = React.createClass({
             <div className="post" id={this.props.id}>
                 <a className="title">{this.props.title}</a>
                 <br/>
-                <Image cloudName="dt33hi6os" publicId={this.props.picId + '.jpg' } width="300" height="300"
+                <Image cloudName="dt33hi6os" publicId={this.props.picId + '.jpg' } width="300"
                        crop="scale"/>
                 <div className="post-action">
                     <div className="action-container-upvote"><a className="upvote"></a></div>

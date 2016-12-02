@@ -173,7 +173,7 @@ var NavBar = React.createClass({
                             <img className="avatar-icon" src="https://hugelolcdn.com/avatar/100x100/0.png"/>
                             <span>You</span>
                         </a>
-              <input type="button" value="Upload"/>
+              <input type="button" value="Upload" onClick={() => location.replace("/#/upload_route")}/>
 
            </span>
                     <div id="profileDown">

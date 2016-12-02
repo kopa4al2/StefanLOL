@@ -17,16 +17,6 @@ class Layout extends Component {
         return (
             <div>
                 <NavBar username={this.state.username}/>
-                <div className="cs-loader">
-                    <div className="cs-loader-inner">
-                        <label>	●</label>
-                        <label>	●</label>
-                        <label>	●</label>
-                        <label>	●</label>
-                        <label>	●</label>
-                        <label>	●</label>
-                    </div>
-                </div>
                 <div id="error" className="notification"></div>
                 <div id="success" className="notification"></div>
                 <div className="container">
@@ -41,6 +31,12 @@ class Layout extends Component {
             $(this).fadeOut();
         });
         // Attach global AJAX "loading" event handlers
+        XMLHttpRequest.onloadstart = function() {
+            $(".cs-loader").show()
+        };
+        XMLHttpRequest.onloadend = function() {
+            $(".cs-loader").hide()
+        };
         $(document).on({
             ajaxStart: function () {
                 $(".cs-loader").show()

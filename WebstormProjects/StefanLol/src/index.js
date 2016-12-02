@@ -5,6 +5,7 @@ import Layout from './Layout';
 import ForgotPassword from './Components/forgot-password-form';
 import LoginForm from './Components/login-form';
 import RegisterForm from './Components/register-form';
+import ImageUploader from './Components/uploader';
 import Main from './Main';
 import './index.css';
 
@@ -16,6 +17,7 @@ ReactDOM.render(
             <Route path="forgot_password" component={ForgotPassword}></Route>
             <Route path="login_route" component={LoginForm}></Route>
             <Route path="register_route" component={RegisterForm}></Route>
+            <Route path="upload_route" component={ImageUploader}></Route>
         </Route>
     </Router>,
     document.getElementById('root')
